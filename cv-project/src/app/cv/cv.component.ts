@@ -1,17 +1,32 @@
-import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, ViewChild, OnInit } from '@angular/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-cv',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, HttpClientModule],
   templateUrl: './cv.component.html',
   styleUrls: ['./cv.component.css']
 })
-export class CvComponent implements AfterViewInit {
+export class CvComponent implements OnInit, AfterViewInit {
   @ViewChild('cvContainer') cvContainer!: ElementRef;
 
+  cvData:any;
+
+  constructor(private http: HttpClient) {}
+
+  ngOnInit(): void {
+    this.loadJsonData();
+  }
   ngAfterViewInit(): void {
     this.adjustFontSize();
+  }
+
+  loadJsonData() {
+    this.http.get('asset/cv-content.json').subscribe(data => {
+      this.cvData = data;
+    });
   }
 
   adjustFontSize() {
