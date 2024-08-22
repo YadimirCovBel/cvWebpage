@@ -1,0 +1,83 @@
+{
+    "personalInformation": {
+      "name": "Yadinmir Covarrubias Beltran",
+      "email": "yadimir.cova@gmail.com",
+      "tel": "(MX) +52 6672 09 0541",
+      "personalRepo": "https://github.com/YadimirCovBel"
+    },
+    "nationality": ["United States", "Mexican"],
+    "travelDocumentation": ["United States passport", "Mexican passport"],
+    "education": "Licenciado en Mercadotecnia (B.S. in Marketing)",
+    "skills": {
+      "languages": ["Spanish: Advanced", "English: Advanced"],
+      "softwareDevelopment": [
+        "HTML5",
+        "CSS3",
+        "TypeScript",
+        "JavaScript",
+        "SQL",
+        "MariaDB",
+        "MySQL",
+        "NoSQL",
+        "MongoDB",
+        "SSH",
+        "GNU/Linux (Debian Flavor distros)",
+        "Shell",
+        "Bash",
+        "SystemD"
+      ],
+      "stacks": {
+        "MEAN": ["MongoDB", "Express.js"]
+      },
+      "managementSkills": [
+        "Leadership",
+        "Logistics",
+        "Team Coordination",
+        "Problem Solving",
+        "Risk Assessment",
+        "Value Delivery",
+        "Metrics Analysis",
+        "Budget Planning"
+      ]
+    },
+    "workExperience": [
+      {
+        "company": "Servicios industriales KingWash",
+        "location": "Zapopan, Jalisco, México",
+        "period": "AUG/2019 - current",
+        "position": "Chief Administrative Officer",
+        "responsibilities": [
+          "Administrative staff management driven by the mission and vision of the company focused in delivering world-class laundry services to stay competitive while maintaining highest standard to be able to satisfy Hospital and Hotels Companies.",
+          "The daily basis work can be summarized in leading the following areas Collections, Human Resources, Invoicing, infrastructure Maintenance, Supplier Input Control, Customer Service; these while maintaining, planning and executing strategies for our scalable business model.",
+          "Specialized services in laundry to industrial level costumer with more than 20 years with proven experience attending hospital, healthcare and hotels market delivering a top service attending the necessities of the industry, we also deliver pending to be patented processes based in chemical research for extending the lifespan of the fabrics."
+        ]
+      },
+      {
+        "company": "Transportadora de perecederos y congelados H",
+        "location": "Zapopan, Jalisco. México",
+        "period": "SEP /2017- JUN/2019",
+        "position": "Logistic administrative",
+        "responsibilities": [
+          "Supplies Administrator for the control of fuel and other transportation automotive fleet needs for the operation also in accomplish with the C-TPAT parameters to keep certifications while having contact with C-TPAT agent; Quality assessment service."
+        ]
+      },
+      {
+        "company": "Hospital San Javier",
+        "location": "Guadalajara, Jalisco. México",
+        "period": "SEP/2015- JUN/2017",
+        "position": "Marketing Assistant",
+        "responsibilities": [
+          "Market research, promotional events planning and support, control of supplies stock and pricing."
+        ]
+      },
+      {
+        "company": "Telefónica",
+        "location": "Customer representative",
+        "position": "Marketing Assistant",
+        "responsibilities": [
+          "Attention to complaints, malfunctions of ISP and cancellations of ISP and other services of the ISP."
+        ]
+      }
+    ]
+  }
+  
