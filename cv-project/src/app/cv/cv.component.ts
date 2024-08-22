@@ -11,20 +11,20 @@ import { CommonModule } from '@angular/common';
 })
 export class CvComponent implements OnInit, AfterViewInit {
   @ViewChild('cvContainer') cvContainer!: ElementRef;
-
-  cvData:any;
+  cvData: any;
 
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
     this.loadJsonData();
   }
+
   ngAfterViewInit(): void {
     this.adjustFontSize();
   }
 
   loadJsonData() {
-    this.http.get('asset/cv-content.json').subscribe(data => {
+    this.http.get('assets/cv-content.json').subscribe(data => {
       this.cvData = data;
     });
   }
