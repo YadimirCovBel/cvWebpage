@@ -27,6 +27,7 @@ export class CvComponent implements OnInit, AfterViewInit {
   loadJsonData() {
     this.http.get('assets/cv-content.json').subscribe(data => {
       this.cvData = data;
+      setTimeout(()=> this.adjustFontSize(),0);
     });
   }
 
