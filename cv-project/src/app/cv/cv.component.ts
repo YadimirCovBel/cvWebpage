@@ -1,11 +1,11 @@
 import { Component, AfterViewInit, ElementRef, ViewChild, OnInit } from '@angular/core';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-cv',
   standalone: true,
-  imports: [CommonModule, HttpClientModule],
+  imports: [CommonModule],
   templateUrl: './cv.component.html',
   styleUrls: ['./cv.component.css']
 })
@@ -20,9 +20,10 @@ export class CvComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+    if (this.cvContainer){
     this.adjustFontSize();
   }
-
+  }
   loadJsonData() {
     this.http.get('assets/cv-content.json').subscribe(data => {
       this.cvData = data;
@@ -38,9 +39,16 @@ export class CvComponent implements OnInit, AfterViewInit {
     let fontSize = maxFontSize;
     container.style.fontSize = `${fontSize}px`;
 
+    console.log('Initial scrollHeight:', container.scrollHeight);
+    console.log('Initial fontSize:', fontSize);
+
     while (container.scrollHeight > maxHeight && fontSize > minFontSize) {
       fontSize--;
       container.style.fontSize = `${fontSize}px`;
+      console.log('Adjusted fontSize:', fontSize);
     }
+    console.log('Final scrollHeight:', container.scrollHeight);
+    console.log('Final fontSize:', fontSize);
+
   }
 }
